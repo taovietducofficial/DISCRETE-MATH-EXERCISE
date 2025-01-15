@@ -1,4 +1,4 @@
-// Viết bằng C
+// Viết bằng C++
 // Bài 5: Tính tổ hợp C(n,k) bằng quy hoạch động.
 
 #include <iostream>
