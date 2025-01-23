@@ -13,7 +13,7 @@ def subset_sum(arr, k): # arr: mảng số nguyên, k: tổng cần tìm
             dp[i][j] = dp[i - 1][j] # Gán giá trị dp[i][j] = dp[i-1][j] 
             if j >= arr[i - 1]: # Nếu j >= arr[i-1]
                 dp[i][j] += dp[i - 1][j - arr[i - 1]] # Cộng thêm giá trị dp[i-1][j-arr[i-1]] vào dp[i][j]
-    return dp[n][k]
+    return dp[n][k] 
 
 # Ví dụ
 arr = [2, 3, 5, 6, 8]
@@ -22,5 +22,4 @@ print(f"Số tập con có tổng bằng {k} là: {subset_sum(arr, k)}")
 
 # Kết quả
 # Số tập con có tổng bằng 10 là: 3
-# Có 3 tập con có tổng bằng 10 là: {2, 3, 5}, {2, 8}, {3, 6}
-# Có thể thấy có 3 tập con có tổng bằng 10 từ mảng arr = [2, 3, 5, 6, 8]
+# Có 3 tập con có tổng bằng 10 là: {2, 3, 5}, {2, 8}, {3, 6 
