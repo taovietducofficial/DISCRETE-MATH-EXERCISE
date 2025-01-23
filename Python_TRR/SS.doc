@@ -1,15 +1,20 @@
 So sánh tốc độ của các ngôn ngữ (Python, C, C++):
-Tốc độ thực thi của một chương trình phụ thuộc vào nhiều yếu tố, bao gồm ngôn ngữ lập trình, cách triển khai thuật toán, và môi trường thực thi. 
-Tuy nhiên, dựa trên đặc tính của các ngôn ngữ, chúng ta có thể ước lượng như sau:
+Tốc độ thực thi của một chương trình phụ thuộc vào nhiều yếu tố, 
+bao gồm ngôn ngữ lập trình, cách triển khai thuật toán, 
+và môi trường thực thi. 
 
 1. Tốc độ thực thi
 C:
 - Nhanh nhất vì nó biên dịch trực tiếp thành mã máy (machine code).
-- Không có lớp trung gian như trình thông dịch, do đó tận dụng tài nguyên phần cứng tốt hơn.
-- Quản lý bộ nhớ thủ công cho phép tối ưu tốt hơn, nhưng đòi hỏi nhiều công sức hơn từ lập trình viên.
+- Không có lớp trung gian như trình thông dịch, 
+do đó tận dụng tài nguyên phần cứng tốt hơn.
+- Quản lý bộ nhớ thủ công cho phép tối ưu tốt hơn, 
+nhưng đòi hỏi nhiều công sức hơn từ lập trình viên.
 C++:
-- Gần như nhanh bằng C (chậm hơn một chút do có thêm tính năng hướng đối tượng và thư viện chuẩn lớn như std::vector).
-- Hỗ trợ cấu trúc dữ liệu linh hoạt hơn (như std::vector, std::map) có thể làm chậm một chút khi sử dụng.
+- Gần như nhanh bằng C (chậm hơn một chút do có thêm tính năng hướng đối tượng 
+và thư viện chuẩn lớn như std::vector).
+- Hỗ trợ cấu trúc dữ liệu linh hoạt hơn (như std::vector, std::map) 
+có thể làm chậm một chút khi sử dụng.
 Python:
 - Chậm nhất vì là ngôn ngữ thông dịch, thực thi mã qua lớp trung gian (CPython, PyPy).
 - Thời gian thực thi thường chậm hơn C/C++ khoảng 10-100 lần trong các tác vụ xử lý nặng.
@@ -17,11 +22,15 @@ Python:
 2. Tối ưu thuật toán
 - Tốc độ không chỉ phụ thuộc vào ngôn ngữ, mà còn vào cách thuật toán được triển khai.
 - Trong C/C++, bạn cần tự viết nhiều phần, nên nếu tối ưu tốt, sẽ cực kỳ nhanh.
-- Python có thể triển khai thuật toán nhanh nhờ thư viện mạnh mẽ (như NumPy), nhưng nếu chỉ dùng thuật toán cơ bản, tốc độ sẽ chậm hơn đáng kể.
+- Python có thể triển khai thuật toán nhanh nhờ thư viện mạnh mẽ (như NumPy), 
+nhưng nếu chỉ dùng thuật toán cơ bản, tốc độ sẽ chậm hơn đáng kể.
 
-=> Nếu yêu cầu hiệu năng cao: C là nhanh nhất, phù hợp cho các bài toán cần tối ưu tuyệt đối.
-=> Nếu cần linh hoạt: C++ là lựa chọn tốt, kết hợp giữa hiệu năng và khả năng quản lý cấu trúc dữ liệu.
-=> Nếu cần dễ viết, dễ đọc: Python phù hợp nhất, nhưng không phù hợp với các bài toán yêu cầu thời gian thực thi nhanh.
+=> Nếu yêu cầu hiệu năng cao: C là nhanh nhất, 
+phù hợp cho các bài toán cần tối ưu tuyệt đối.
+=> Nếu cần linh hoạt: C++ là lựa chọn tốt, 
+kết hợp giữa hiệu năng và khả năng quản lý cấu trúc dữ liệu.
+=> Nếu cần dễ viết, dễ đọc: Python phù hợp nhất, 
+nhưng không phù hợp với các bài toán yêu cầu thời gian thực thi nhanh.
 
 Bạn nên chọn ngôn ngữ tùy vào yêu cầu cụ thể:
 - Thời gian phát triển nhanh: Python.
