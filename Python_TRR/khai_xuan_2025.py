@@ -1,1 +1,1 @@
-print('Hello World!, Khai Xuân 2025')
+print('HELLO WORLD!, KHAI XUAN 2025')
